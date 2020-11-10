@@ -3,6 +3,11 @@
     max-width:100%
 }
 
+#myads {
+    margin:15px auto;
+    text-align:center
+    }
+
 .clearfix:after {
     clear: both;
     content: '.';
